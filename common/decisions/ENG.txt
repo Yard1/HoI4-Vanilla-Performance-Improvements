@@ -8654,9 +8654,9 @@ political_actions = {
 		
 		available = {
 			NOT = {
-				any_of_scopes = {
+				any_of = {
 					array = USA.core_states
-					NOT = { is_owned_and_controlled_by = ENG }
+					var:v = { NOT = { is_owned_and_controlled_by = ENG } }
 				}
 			}
 		}
@@ -8767,9 +8767,9 @@ political_actions = {
 		
 		available = {
 			NOT = {
-				any_of_scopes = {
+				any_of = {
 					array = USA.core_states
-					NOT = { is_owned_and_controlled_by = ENG }
+					var:v = { NOT = { is_owned_and_controlled_by = ENG } }
 				}
 			}
 			OR = {

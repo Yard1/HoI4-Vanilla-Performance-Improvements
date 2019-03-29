@@ -9,14 +9,11 @@ war_measures = {
 		}
 
 		available = {
-			any_of_scopes = {
-				array = USA.core_states
-				NOT = {
-					is_controlled_by = USA
-				}
-			}
 			has_civil_war = no
-
+			any_of = {
+				array = USA.core_states
+				var:v = { NOT = { is_controlled_by = USA } }
+			}
 		}
 
 		cost = 50
@@ -412,9 +409,9 @@ war_measures = {
 	}
 	USA_CSA_set_up_provisional_government = { 
 		available = {
-			any_of_scopes = {
+			any_of = {
 				array = USA.core_states
-				is_fully_controlled_by = ROOT
+				var:v = { is_fully_controlled_by = ROOT }
 			}
 		}
 		visible = {
@@ -1373,13 +1370,15 @@ economy_decisions = {
 	USA_communal_domain = {
 		icon = generic_operation
 		available = {
-			any_of_scopes = {
+			any_of = {
 				array = core_states
-				is_controlled_by = ROOT
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
+				var:v = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
 				}
 			}
 		}

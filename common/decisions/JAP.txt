@@ -594,20 +594,23 @@ foreign_politics = {
 					controls_state = 527
 				}
 				NOT = {
-					any_of_scopes = {
+					any_of = {
 						array = CHI.core_states
-						NOT = {
-							state = 524
-						}
-						OR = {
-							is_controlled_by = JAP
-							AND = {
-								is_controlled_by = MEN
-								MEN = { is_subject_of = JAP }
+						var:v = {
+							NOT = {
+								state = 524
 							}
-							AND = {
-								is_controlled_by = MAN
-								MAN = { is_subject_of = JAP }
+							controller = {
+								OR = {
+									tag = JAP
+									AND = {
+										is_subject_of = JAP
+										OR = {
+											tag = MEN
+											tag = MAN
+										}
+									}
+								}
 							}
 						}
 					}
@@ -674,16 +677,20 @@ foreign_politics = {
 					controls_state = 527
 				}
 				NOT = {
-					any_of_scopes = {
+					any_of = {
 						array = CHI.core_states
-						NOT = {
-							state = 524
-						}
-						OR = {
-							is_controlled_by = JAP
-							AND = {
-								is_controlled_by = MEN
-								MEN = { is_subject_of = JAP }
+						var:v = {
+							NOT = {
+								state = 524
+							}
+							controller = {
+								OR = {
+									tag = JAP
+									AND = {
+										is_subject_of = JAP
+										tag = MEN
+									}
+								}
 							}
 						}
 					}

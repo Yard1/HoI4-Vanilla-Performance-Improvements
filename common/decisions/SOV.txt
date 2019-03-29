@@ -665,9 +665,9 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_of_scopes = {
+			any_of = {
 				array = BLR.core_states
-				is_controlled_by = SOV
+				var:v = { is_controlled_by = SOV }
 			}
 		}
 
@@ -699,10 +699,6 @@ SOV_great_patriotic_war = {
 		available = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_of_scopes = {
-				array = UKR.core_states
-				is_controlled_by = SOV
-			}
 			has_equipment = {
 				support_equipment > 74
 			}
@@ -713,9 +709,9 @@ SOV_great_patriotic_war = {
 		visible = {
 			has_war = yes
 			has_country_flag = SOV_scorched_earth
-			any_of_scopes = {
+			any_of = {
 				array = UKR.core_states
-				is_controlled_by = SOV
+				var:v = { is_controlled_by = SOV }
 			}
 		}
 
