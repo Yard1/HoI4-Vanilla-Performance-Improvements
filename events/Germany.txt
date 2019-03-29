@@ -2996,8 +2996,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_leader = { name = "Adolf Hitler" }
 		tag = GER
+		has_country_leader = { name = "Adolf Hitler" }
 		AND = {
 			CZE = { has_capitulated = no }
 			country_exists = CZE # Should only trigger if CZE hasn't fallen
