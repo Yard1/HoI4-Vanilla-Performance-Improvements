@@ -509,7 +509,7 @@ get_best_alliance_match_effect = {
 			}
 			set_temp_variable = { THIS.leader_score = num_of_factories }
 			add_to_temp_variable = { THIS.leader_score = num_battalions }
-			every_country = {
+			every_other_country = {
 				limit = { is_in_faction_with = PREV }
 				add_to_temp_variable = { PREV.leader_score = num_of_factories }
 				add_to_temp_variable = { PREV.leader_score = num_battalions }
