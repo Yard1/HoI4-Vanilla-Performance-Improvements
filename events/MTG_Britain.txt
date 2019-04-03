@@ -7632,6 +7632,7 @@ country_event = {
 				inexperienced_monarch headstrong popular_queen
 			}
 		}
+		set_party_name = { ideology = neutrality long_name = ENG_neutrality_party_queens_party_long name = ENG_neutrality_party_queens_party }
 		hidden_effect = { news_event = { id = mtg_news.59 days = 1 } }
 	}
 }
