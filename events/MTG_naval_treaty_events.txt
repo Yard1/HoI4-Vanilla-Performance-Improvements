@@ -288,11 +288,10 @@ country_event = {
 	trigger = {
 		has_war = yes
 		has_naval_treaty_trigger = yes
-		is_major = yes
 		any_enemy_country = {
 			is_major = yes
 			NOT = { tag = event_target:WTT_current_china_leader} #special exception
-		} 
+		}
 	}
 	immediate = {
 		every_country = {
