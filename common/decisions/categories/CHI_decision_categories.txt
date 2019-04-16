@@ -27,7 +27,8 @@ CHI_integrate_the_warlords = {
 	visible = {
 		tag = event_target:WTT_current_china_leader
 		OR = {
-			any_allied_country = {
+			any_of_scopes = {
+				array = subjects
 				OR = {
 					tag = GXC
 					tag = YUN
@@ -35,7 +36,6 @@ CHI_integrate_the_warlords = {
 					tag = XSM
 					tag = SIK
 				}
-				is_subject_of = ROOT
 			}
 		}
 	}

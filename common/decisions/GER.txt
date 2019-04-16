@@ -269,10 +269,10 @@ GER_case_anton_category = {
 			original_tag = GER
 			has_war = yes
 			has_government = fascism
-			any_allied_country = {
+			any_country = {
 				original_tag = FRA
 				has_government = fascism
-				is_subject_of = GER
+				is_subject_of = ROOT
 				NOT = { has_country_flag = case_anton }
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt2
@@ -307,10 +307,10 @@ GER_case_anton_category = {
 		visible = {
 			original_tag = GER
 			has_government = fascism
-			any_allied_country = {
+			any_of_scopes = {
+				array = subjects
 				original_tag = FRA
 				has_government = fascism
-				is_subject_of = GER
 			}
 		}
 		ai_will_do = {
