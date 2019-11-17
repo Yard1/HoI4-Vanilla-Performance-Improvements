@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: CWTools test
     steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
     - name: CWTools test
       uses: Yard1/CWTools-action@master
       env:
