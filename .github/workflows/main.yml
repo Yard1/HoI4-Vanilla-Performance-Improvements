@@ -13,3 +13,5 @@ jobs:
     - name: CWTools test
       id: hello
       uses: Yard1/CWTools-action@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
