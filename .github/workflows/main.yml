@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: CWTools test
       id: hello
-      uses: Yard1/CWTools-action@1
+      uses: Yard1/CWTools-action
