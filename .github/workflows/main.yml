@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  cwtools_job:
+    runs-on: ubuntu-latest
+    name: CWTools test
+    steps:
+    - name: CWTools test
+      id: hello
+      uses: Yard1/CWTools-action@1
