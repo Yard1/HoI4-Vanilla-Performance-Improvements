@@ -14,5 +14,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: |
         sudo apt install tree
-        sudo tree -R /
+        sudo tree -L 2 /
       if: always()
