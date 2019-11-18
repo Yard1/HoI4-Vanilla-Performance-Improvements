@@ -8,6 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: Yard1/CWTools-action@master
+      with:
+        suppressedOffenceCategories: '{"failure":[], "warning":["CW242"], "notice":[]}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Prepare log for artifact upload
