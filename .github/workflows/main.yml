@@ -10,3 +10,10 @@ jobs:
     - uses: Yard1/CWTools-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: |
+        sudo mkdir /artifact
+        sudo mv output.json /artifact
+    - uses: actions/upload-artifact@master
+      with:
+        name: cwtools_output
+        path: /artifact
