@@ -12,9 +12,10 @@ jobs:
         suppressedOffenceCategories: '{"failure":[], "warning":["CW242"], "notice":[]}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: ls
     - name: Upload artifact
       if: always()
       uses: actions/upload-artifact@v1.0.0
       with:
         name: cwtools_output
-        path: artifact/output.json
+        path: output.json
