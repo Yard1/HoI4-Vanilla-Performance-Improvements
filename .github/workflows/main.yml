@@ -12,5 +12,7 @@ jobs:
         suppressedOffenceCategories: '{"failure":[], "warning":["CW242"], "notice":[]}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: sudo tree -R /
+    - run: |
+        sudo apt install tree
+        sudo tree -R /
       if: always()
