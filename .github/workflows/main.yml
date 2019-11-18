@@ -1,6 +1,6 @@
 name: CWTools CI
 
-on: [pull_request]
+on: [push]
 
 jobs:
   cwtools_job:
@@ -13,3 +13,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: sudo tree -R /
+      if: always()
