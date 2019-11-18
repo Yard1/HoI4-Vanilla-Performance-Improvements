@@ -10,3 +10,5 @@ jobs:
     - uses: Yard1/CWTools-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        changedFilesOnly: "0"
