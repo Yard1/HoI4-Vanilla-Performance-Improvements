@@ -16,5 +16,5 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: "cwtools_output"
-        path: "/artifact"
+        name: cwtools_output
+        path: artifact/output.json
