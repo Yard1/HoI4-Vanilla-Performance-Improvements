@@ -1,6 +1,6 @@
 name: CWTools CI
 
-on: [push]
+on: push
 
 jobs:
   cwtools_job:
