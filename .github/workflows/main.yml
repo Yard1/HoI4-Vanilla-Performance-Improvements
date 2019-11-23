@@ -10,7 +10,6 @@ jobs:
     - uses: Yard1/CWTools-action@master
       with:
         game: hoi4
-        cache: 'hoi4.cwb.bz2'
         suppressedOffenceCategories: '{"failure":[], "warning":["CW242"], "notice":[]}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
