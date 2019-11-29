@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: Yard1/CWTools-action@master
+    - uses: Yard1/CWTools-action@gitlab-integration
       with:
         game: hoi4
         suppressedOffenceCategories: '{"failure":[], "warning":["CW242"], "notice":[]}'
